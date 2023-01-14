@@ -9,10 +9,18 @@ const Header = ({ openMenu, setOpenMenu }) => {
       <h1 className="logo">newsBazar</h1>
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/sports">Sports</Link></li>
-          <li><Link to="/technology">Technology</Link></li>
-          <li><Link to="/stockmarket">Stock Market</Link></li>
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link to="/sports">
+            <li>Sports</li>
+          </Link>
+          <Link to="/technology">
+            <li>Technology</li>
+          </Link>
+          <Link to="/stockmarket">
+            <li>Stock Market</li>
+          </Link>
         </ul>
       </nav>
       <div
