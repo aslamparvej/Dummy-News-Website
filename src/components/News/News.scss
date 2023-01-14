@@ -1,0 +1,52 @@
+@import "../../global.scss";
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+
+  margin: 20px 0;
+
+  .news-card {
+    width: 100%;
+    min-height: 250px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: 2px 2px 4px $mainColor;
+
+    .heading{
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid $mainColor;
+        }
+    }
+    .desc{
+        p{
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        margin-top: 10px;
+    }
+  }
+
+}
+@media (max-width: 768px) {
+    .news{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+@media (max-width: 500px) {
+    .news{
+        grid-template-columns: 1fr;
+    }
+  }
